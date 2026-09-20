@@ -4,7 +4,7 @@
 
 ## دمو (لینک آنلاین)
 
-[لینک دمو رو اینجا بذار]
+[https://ghazal-hassanabadi.github.io/live-search-js/]
 
 ## این پروژه شامل چیه؟
 
