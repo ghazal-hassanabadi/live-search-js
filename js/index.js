@@ -152,3 +152,37 @@ function renderProducts (productsArray) {
 
 
 };
+
+function debounce(fn , delay) {
+  let timer;
+
+  return function() {
+    clearTimeout(timer);
+
+    timer = setTimeout(function() {
+  fn();
+}, delay);
+
+}
+}
+
+function searchProducts () {
+  const searchValue = searchInput.value;
+
+  const result = products.filter(function(product) {
+    return product.name.includes(searchValue);
+  });
+
+  renderProducts(result);
+
+  if (searchValue === "") {
+  productListContainer.classList.remove("active");
+} else {
+  productListContainer.classList.add("active");
+}
+
+}
+
+searchInput.addEventListener("input", debounce(searchProducts, 300));
+
+renderProducts(products);
