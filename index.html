@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,43 @@
     <title>live search</title>
 </head>
 <body>
+
+    <header class="site-header" id="siteHeader">
+    <section class="welcome-bar-mobile" id="welcomeBar">
+        <h1 class="welcome-text" id="welcomeText">به فروشگاه رزالین خوش آمدید </h1>
+    </section>
+    
+    
+      <section class="searchUser">  
+        
+            <button class="login-btn" id="loginBtn">
+                <i class="fa-solid fa-user"></i>
+            </button>
+          <img class="name-mobile" src="images/rozalin.png" alt="">  
+      </section>
+
+      <img class="name" src="images/rozalin.png" alt="">
+    <nav class="main-nav" id="mainNav">        
+        <ul class="nav-list" id="navList">
+            <li class="nav-item"><a href="#" class="nav-link active-link">خانه</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">محصولات</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">تماس با ما</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">سبد خرید</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="search">
+    <search class="search-box" id="searchBox">
+        <input type="text" class="search-input" id="searchInput" placeholder="جستجو...">
+    </search>
+</section>
+
+<section id="productList"></section>
+
+
+
+
     <script src="js/index.js"></script>
 </body>
 </html>
